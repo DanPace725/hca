@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "task_count": 2,
+    "accuracy": 0.0,
+    "max_steps": 10,
+    "halt_threshold": 0.85,
+    "timestamp": "2025-12-04T00:07:13.069461+00:00"
+  },
+  "results": [
+    {
+      "test_id": "test_0001",
+      "scenario": "apple_sharing",
+      "output_shape": "json",
+      "expected": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "predicted": "step=7 density=0.55",
+      "match": false,
+      "format_ok": false,
+      "steps": 8
+    },
+    {
+      "test_id": "test_0002",
+      "scenario": "apple_sharing",
+      "output_shape": "plain_prose",
+      "expected": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "predicted": "step=7 density=0.55",
+      "match": false,
+      "format_ok": true,
+      "steps": 8
+    }
+  ]
+}

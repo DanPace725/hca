@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "task_count": 1,
+    "accuracy": 1.0,
+    "max_steps": 10,
+    "halt_threshold": 0.85,
+    "timestamp": "2025-12-04T01:50:18.148908+00:00",
+    "semantic_counts": {
+      "semantic_ollama": 1
+    },
+    "scenarios_filtered": [
+      "apple_sharing"
+    ]
+  },
+  "results": [
+    {
+      "test_id": "test_0001",
+      "scenario": "apple_sharing",
+      "output_shape": "json",
+      "expected": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "predicted": "{\"tom\": 3.0, \"john\": 3.0, \"sarah\": 1}",
+      "match": true,
+      "reason": "numbers_subset",
+      "format_ok": true,
+      "steps": 1,
+      "semantic_source": "semantic_ollama",
+      "semantic_error": null
+    }
+  ]
+}

@@ -1,0 +1,618 @@
+{
+  "observation": {
+    "text": "Tom has 3 apples. He gives Sarah 1.",
+    "metadata": null
+  },
+  "final_answer": "step=5 density=0.55",
+  "final_rel_state": {
+    "entities": {
+      "tom": {
+        "id": "tom",
+        "type": "person",
+        "metadata": {}
+      },
+      "sarah": {
+        "id": "sarah",
+        "type": "person",
+        "metadata": {}
+      }
+    },
+    "relations": [
+      {
+        "source_id": "tom",
+        "relation_type": "gives",
+        "target_id": "sarah",
+        "metadata": {
+          "item": "apple",
+          "quantity": 1
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_0",
+        "metadata": {
+          "text": "step=0 density=0.30",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_1",
+        "metadata": {
+          "text": "step=1 density=0.35",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_2",
+        "metadata": {
+          "text": "step=2 density=0.40",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_3",
+        "metadata": {
+          "text": "step=3 density=0.45",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_4",
+        "metadata": {
+          "text": "step=4 density=0.50",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_5",
+        "metadata": {
+          "text": "step=5 density=0.55",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "name": "quantity_nonnegative",
+        "params": {}
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.3,
+        "hidden_norm": null
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "sarah": {
+            "id": "sarah",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.09999999999999999,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_stub",
+        "density": 0.3
+      }
+    },
+    {
+      "step_idx": 1,
+      "core_state_summary": {
+        "step": 2,
+        "hidden_accumulator": 0.65,
+        "hidden_norm": null
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "sarah": {
+            "id": "sarah",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.21666666666666667,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_stub",
+        "density": 0.35000000000000003
+      }
+    },
+    {
+      "step_idx": 2,
+      "core_state_summary": {
+        "step": 3,
+        "hidden_accumulator": 1.05,
+        "hidden_norm": null
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "sarah": {
+            "id": "sarah",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.35000000000000003,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_stub",
+        "density": 0.4
+      }
+    },
+    {
+      "step_idx": 3,
+      "core_state_summary": {
+        "step": 4,
+        "hidden_accumulator": 1.5,
+        "hidden_norm": null
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "sarah": {
+            "id": "sarah",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.45",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.5,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_stub",
+        "density": 0.45
+      }
+    },
+    {
+      "step_idx": 4,
+      "core_state_summary": {
+        "step": 5,
+        "hidden_accumulator": 2.0,
+        "hidden_norm": null
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "sarah": {
+            "id": "sarah",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.45",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=0.50",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.6666666666666666,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_stub",
+        "density": 0.5
+      }
+    },
+    {
+      "step_idx": 5,
+      "core_state_summary": {
+        "step": 6,
+        "hidden_accumulator": 2.55,
+        "hidden_norm": null
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "sarah": {
+            "id": "sarah",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.45",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=0.50",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=0.55",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.85,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_stub",
+        "density": 0.55
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_ollama",
+    "semantic_error": null,
+    "model": "phi3:latest"
+  }
+}

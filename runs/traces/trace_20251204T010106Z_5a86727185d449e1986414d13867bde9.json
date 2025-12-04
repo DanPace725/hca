@@ -1,0 +1,117 @@
+{
+  "observation": {
+    "text": "Summarize the following information: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+    "metadata": {
+      "scenario": "apple_sharing",
+      "test_id": "test_0001",
+      "output_shape": "json"
+    }
+  },
+  "final_answer": "{\"tom\": 3.0, \"john\": 3.0, \"sarah\": 1}",
+  "final_rel_state": {
+    "entities": {
+      "observation": {
+        "id": "observation",
+        "type": "text",
+        "metadata": {
+          "text": "Summarize the following information: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+          "length": 275
+        }
+      }
+    },
+    "relations": [
+      {
+        "source_id": "observation",
+        "relation_type": "describes",
+        "target_id": "observation_text",
+        "metadata": {
+          "token_estimate": 48,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "answer",
+        "target_id": "answer",
+        "metadata": {
+          "text": "{\"tom\": 3.0, \"john\": 3.0, \"sarah\": 1}",
+          "source": "reasoning_core_rule",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "name": "quantity_nonnegative",
+        "params": {}
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.0
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Summarize the following information: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+              "length": 275
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 48,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "answer",
+            "target_id": "answer",
+            "metadata": {
+              "text": "{\"tom\": 3.0, \"john\": 3.0, \"sarah\": 1}",
+              "source": "reasoning_core_rule",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 1.0,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": null,
+        "core": "reasoning_core_rule"
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_stub",
+    "semantic_error": null,
+    "model": "phi3:latest"
+  }
+}

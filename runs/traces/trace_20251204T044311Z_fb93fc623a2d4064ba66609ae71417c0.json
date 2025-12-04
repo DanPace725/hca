@@ -1,0 +1,170 @@
+{
+  "observation": {
+    "text": "Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John.",
+    "metadata": {
+      "scenario": "apple_sharing"
+    }
+  },
+  "final_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+  "final_rel_state": {
+    "entities": {
+      "tom": {
+        "id": "tom",
+        "type": "person",
+        "metadata": {}
+      },
+      "ent_1": {
+        "id": "ent_1",
+        "type": "person",
+        "metadata": {}
+      }
+    },
+    "relations": [
+      {
+        "source_id": "tom",
+        "relation_type": "gives",
+        "target_id": "sarah",
+        "metadata": {
+          "item": "apple",
+          "quantity": 1,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "tom",
+        "relation_type": "buys",
+        "target_id": "observation_text",
+        "metadata": {
+          "item": "apples",
+          "quantity": 4,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "john",
+        "relation_type": "splits equally with",
+        "target_id": "tom",
+        "metadata": {
+          "item": null,
+          "quantity": null,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "answer",
+        "target_id": "answer",
+        "metadata": {
+          "text": "Tom and John each have 3 apples; Sarah has 1 apple.",
+          "source": "reasoning_core_rule",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "name": "quantity_nonnegative",
+        "params": {}
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": null
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "tom",
+            "metadata": {
+              "item": null,
+              "quantity": null,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "answer",
+            "target_id": "answer",
+            "metadata": {
+              "text": "Tom and John each have 3 apples; Sarah has 1 apple.",
+              "source": "reasoning_core_rule",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 1.0,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_rule"
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_ollama",
+    "semantic_error": null,
+    "model": "phi3:latest"
+  }
+}

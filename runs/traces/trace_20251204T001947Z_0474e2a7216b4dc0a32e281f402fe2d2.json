@@ -1,0 +1,827 @@
+{
+  "observation": {
+    "text": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "metadata": {
+      "scenario": "apple_sharing",
+      "test_id": "test_0002",
+      "output_shape": "plain_prose"
+    }
+  },
+  "final_answer": "step=7 density=0.55",
+  "final_rel_state": {
+    "entities": {
+      "observation": {
+        "id": "observation",
+        "type": "text",
+        "metadata": {
+          "text": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+          "length": 286
+        }
+      }
+    },
+    "relations": [
+      {
+        "source_id": "observation",
+        "relation_type": "describes",
+        "target_id": "observation_text",
+        "metadata": {
+          "token_estimate": 48,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_0",
+        "metadata": {
+          "text": "step=0 density=0.20",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_1",
+        "metadata": {
+          "text": "step=1 density=0.25",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_2",
+        "metadata": {
+          "text": "step=2 density=0.30",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_3",
+        "metadata": {
+          "text": "step=3 density=0.35",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_4",
+        "metadata": {
+          "text": "step=4 density=0.40",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_5",
+        "metadata": {
+          "text": "step=5 density=0.45",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_6",
+        "metadata": {
+          "text": "step=6 density=0.50",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_7",
+        "metadata": {
+          "text": "step=7 density=0.55",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": []
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.2
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+              "length": 286
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 48,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.06666666666666667,
+      "notes": {
+        "core": "reasoning_core_stub",
+        "density": 0.2
+      }
+    },
+    {
+      "step_idx": 1,
+      "core_state_summary": {
+        "step": 2,
+        "hidden_accumulator": 0.45
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+              "length": 286
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 48,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.15,
+      "notes": {
+        "core": "reasoning_core_stub",
+        "density": 0.25
+      }
+    },
+    {
+      "step_idx": 2,
+      "core_state_summary": {
+        "step": 3,
+        "hidden_accumulator": 0.75
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+              "length": 286
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 48,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.25,
+      "notes": {
+        "core": "reasoning_core_stub",
+        "density": 0.3
+      }
+    },
+    {
+      "step_idx": 3,
+      "core_state_summary": {
+        "step": 4,
+        "hidden_accumulator": 1.1
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+              "length": 286
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 48,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.3666666666666667,
+      "notes": {
+        "core": "reasoning_core_stub",
+        "density": 0.35000000000000003
+      }
+    },
+    {
+      "step_idx": 4,
+      "core_state_summary": {
+        "step": 5,
+        "hidden_accumulator": 1.5
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+              "length": 286
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 48,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.5,
+      "notes": {
+        "core": "reasoning_core_stub",
+        "density": 0.39999999999999997
+      }
+    },
+    {
+      "step_idx": 5,
+      "core_state_summary": {
+        "step": 6,
+        "hidden_accumulator": 1.95
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+              "length": 286
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 48,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=0.45",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.65,
+      "notes": {
+        "core": "reasoning_core_stub",
+        "density": 0.45
+      }
+    },
+    {
+      "step_idx": 6,
+      "core_state_summary": {
+        "step": 7,
+        "hidden_accumulator": 2.45
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+              "length": 286
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 48,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=0.45",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 density=0.50",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.8166666666666668,
+      "notes": {
+        "core": "reasoning_core_stub",
+        "density": 0.5000000000000001
+      }
+    },
+    {
+      "step_idx": 7,
+      "core_state_summary": {
+        "step": 8,
+        "hidden_accumulator": 3.0
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+              "length": 286
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 48,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=0.45",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 density=0.50",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_7",
+            "metadata": {
+              "text": "step=7 density=0.55",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 1.0,
+      "notes": {
+        "core": "reasoning_core_stub",
+        "density": 0.55
+      }
+    }
+  ]
+}

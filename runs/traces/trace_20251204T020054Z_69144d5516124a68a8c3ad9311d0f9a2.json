@@ -1,0 +1,108 @@
+{
+  "observation": {
+    "text": "A car travels 60 miles in the first hour and 45 miles in the second hour.",
+    "metadata": {
+      "scenario": "travel_distance"
+    }
+  },
+  "final_answer": "105 miles total, 52.50 mph average.",
+  "final_rel_state": {
+    "entities": {
+      "car": {
+        "id": "car",
+        "type": "vehicle",
+        "metadata": {}
+      },
+      "first_hour": {
+        "id": "first_hour",
+        "type": "time_period",
+        "metadata": {}
+      },
+      "second_hour": {
+        "id": "second_hour",
+        "type": "time_period",
+        "metadata": {}
+      }
+    },
+    "relations": [
+      {
+        "source_id": "observation",
+        "relation_type": "answer",
+        "target_id": "answer",
+        "metadata": {
+          "text": "105 miles total, 52.50 mph average.",
+          "source": "reasoning_core_rule",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "name": "quantity_nonnegative",
+        "params": {}
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": null
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "car": {
+            "id": "car",
+            "type": "vehicle",
+            "metadata": {}
+          },
+          "first_hour": {
+            "id": "first_hour",
+            "type": "time_period",
+            "metadata": {}
+          },
+          "second_hour": {
+            "id": "second_hour",
+            "type": "time_period",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "answer",
+            "target_id": "answer",
+            "metadata": {
+              "text": "105 miles total, 52.50 mph average.",
+              "source": "reasoning_core_rule",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 1.0,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_rule"
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_ollama",
+    "semantic_error": null,
+    "model": "phi3:latest"
+  }
+}

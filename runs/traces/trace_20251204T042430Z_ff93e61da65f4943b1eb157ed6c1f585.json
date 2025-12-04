@@ -1,0 +1,113 @@
+{
+  "observation": {
+    "text": "Tom has 3 apples. He gives Sarah 1.",
+    "metadata": {}
+  },
+  "final_answer": "step=0 gru_score=1.78",
+  "final_rel_state": {
+    "entities": {
+      "observation": {
+        "id": "observation",
+        "type": "text",
+        "metadata": {
+          "text": "Tom has 3 apples. He gives Sarah 1.",
+          "length": 35
+        }
+      }
+    },
+    "relations": [
+      {
+        "source_id": "observation",
+        "relation_type": "describes",
+        "target_id": "observation_text",
+        "metadata": {
+          "token_estimate": 8,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_0",
+        "metadata": {
+          "text": "step=0 gru_score=1.78",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "name": "quantity_nonnegative",
+        "params": {}
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 2.9576022624969482
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Tom has 3 apples. He gives Sarah 1.",
+              "length": 35
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 8,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=1.78",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.8599342703819275,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": 1.7758371829986572
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_stub",
+    "semantic_error": null,
+    "model": "phi3:latest"
+  }
+}

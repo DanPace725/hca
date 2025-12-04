@@ -1,0 +1,116 @@
+{
+  "observation": {
+    "text": "John has 5 cookies and gives 2 to Mary.",
+    "metadata": {
+      "scenario": "cookie_problem"
+    }
+  },
+  "final_answer": "John has 3 cookies left.",
+  "final_rel_state": {
+    "entities": {
+      "john": {
+        "id": "john",
+        "type": "person",
+        "metadata": {}
+      },
+      "mary": {
+        "id": "mary",
+        "type": "person",
+        "metadata": {}
+      }
+    },
+    "relations": [
+      {
+        "source_id": "john",
+        "relation_type": "gives",
+        "target_id": "mary",
+        "metadata": {
+          "item": "cookie",
+          "quantity": 2
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "answer",
+        "target_id": "answer",
+        "metadata": {
+          "text": "John has 3 cookies left.",
+          "source": "reasoning_core_rule",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "name": "quantity_nonnegative",
+        "params": {}
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": null
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "john": {
+            "id": "john",
+            "type": "person",
+            "metadata": {}
+          },
+          "mary": {
+            "id": "mary",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "john",
+            "relation_type": "gives",
+            "target_id": "mary",
+            "metadata": {
+              "item": "cookie",
+              "quantity": 2
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "answer",
+            "target_id": "answer",
+            "metadata": {
+              "text": "John has 3 cookies left.",
+              "source": "reasoning_core_rule",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 1.0,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_rule"
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_ollama",
+    "semantic_error": null,
+    "model": "phi3:latest"
+  }
+}

@@ -1,0 +1,1517 @@
+{
+  "observation": {
+    "text": "Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John.",
+    "metadata": null
+  },
+  "final_answer": "step=9 gru_score=-0.40",
+  "final_rel_state": {
+    "entities": {
+      "tom": {
+        "id": "tom",
+        "type": "person",
+        "metadata": {}
+      },
+      "ent_1": {
+        "id": "ent_1",
+        "type": "person",
+        "metadata": {}
+      }
+    },
+    "relations": [
+      {
+        "source_id": "tom",
+        "relation_type": "gives",
+        "target_id": "sarah",
+        "metadata": {
+          "item": "apple",
+          "quantity": 1,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "tom",
+        "relation_type": "buys",
+        "target_id": "observation_text",
+        "metadata": {
+          "item": "apples",
+          "quantity": 4,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "john",
+        "relation_type": "splits equally with",
+        "target_id": "tom",
+        "metadata": {
+          "item": null,
+          "quantity": null,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_0",
+        "metadata": {
+          "text": "step=0 gru_score=-0.31",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_1",
+        "metadata": {
+          "text": "step=1 gru_score=-0.39",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_2",
+        "metadata": {
+          "text": "step=2 gru_score=-0.42",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_3",
+        "metadata": {
+          "text": "step=3 gru_score=-0.43",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_4",
+        "metadata": {
+          "text": "step=4 gru_score=-0.43",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_5",
+        "metadata": {
+          "text": "step=5 gru_score=-0.43",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_6",
+        "metadata": {
+          "text": "step=6 gru_score=-0.43",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_7",
+        "metadata": {
+          "text": "step=7 gru_score=-0.42",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_8",
+        "metadata": {
+          "text": "step=8 gru_score=-0.41",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_9",
+        "metadata": {
+          "text": "step=9 gru_score=-0.40",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "name": "quantity_nonnegative",
+        "params": {}
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 3.7080235481262207
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "tom",
+            "metadata": {
+              "item": null,
+              "quantity": null,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=-0.31",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.5167956352233887,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": -0.3115471601486206
+      }
+    },
+    {
+      "step_idx": 1,
+      "core_state_summary": {
+        "step": 2,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 4.7324371337890625
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "tom",
+            "metadata": {
+              "item": null,
+              "quantity": null,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=-0.31",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 gru_score=-0.39",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.51121985912323,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": -0.38967305421829224
+      }
+    },
+    {
+      "step_idx": 2,
+      "core_state_summary": {
+        "step": 3,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 5.162407398223877
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "tom",
+            "metadata": {
+              "item": null,
+              "quantity": null,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=-0.31",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 gru_score=-0.39",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 gru_score=-0.42",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.5055122375488281,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": -0.4160747528076172
+      }
+    },
+    {
+      "step_idx": 3,
+      "core_state_summary": {
+        "step": 4,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 5.39536190032959
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "tom",
+            "metadata": {
+              "item": null,
+              "quantity": null,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=-0.31",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 gru_score=-0.39",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 gru_score=-0.42",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.5009385347366333,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": -0.42529845237731934
+      }
+    },
+    {
+      "step_idx": 4,
+      "core_state_summary": {
+        "step": 5,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 5.5372538566589355
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "tom",
+            "metadata": {
+              "item": null,
+              "quantity": null,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=-0.31",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 gru_score=-0.39",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 gru_score=-0.42",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.4962606728076935,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": -0.42810380458831787
+      }
+    },
+    {
+      "step_idx": 5,
+      "core_state_summary": {
+        "step": 6,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 5.626954078674316
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "tom",
+            "metadata": {
+              "item": null,
+              "quantity": null,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=-0.31",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 gru_score=-0.39",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 gru_score=-0.42",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.49089086055755615,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": -0.4279611110687256
+      }
+    },
+    {
+      "step_idx": 6,
+      "core_state_summary": {
+        "step": 7,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 5.684237957000732
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "tom",
+            "metadata": {
+              "item": null,
+              "quantity": null,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=-0.31",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 gru_score=-0.39",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 gru_score=-0.42",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.4846695363521576,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": -0.425476610660553
+      }
+    },
+    {
+      "step_idx": 7,
+      "core_state_summary": {
+        "step": 8,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 5.722118377685547
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "tom",
+            "metadata": {
+              "item": null,
+              "quantity": null,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=-0.31",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 gru_score=-0.39",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 gru_score=-0.42",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_7",
+            "metadata": {
+              "text": "step=7 gru_score=-0.42",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.47759729623794556,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": -0.42040878534317017
+      }
+    },
+    {
+      "step_idx": 8,
+      "core_state_summary": {
+        "step": 9,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 5.750582695007324
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "tom",
+            "metadata": {
+              "item": null,
+              "quantity": null,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=-0.31",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 gru_score=-0.39",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 gru_score=-0.42",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_7",
+            "metadata": {
+              "text": "step=7 gru_score=-0.42",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_8",
+            "metadata": {
+              "text": "step=8 gru_score=-0.41",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.4697194993495941,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": -0.41248905658721924
+      }
+    },
+    {
+      "step_idx": 9,
+      "core_state_summary": {
+        "step": 10,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 5.777802467346191
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "tom",
+            "metadata": {
+              "item": null,
+              "quantity": null,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=-0.31",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 gru_score=-0.39",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 gru_score=-0.42",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 gru_score=-0.43",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_7",
+            "metadata": {
+              "text": "step=7 gru_score=-0.42",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_8",
+            "metadata": {
+              "text": "step=8 gru_score=-0.41",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_9",
+            "metadata": {
+              "text": "step=9 gru_score=-0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.46109089255332947,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": -0.4016895890235901
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_ollama",
+    "semantic_error": null,
+    "model": "phi3:latest"
+  }
+}

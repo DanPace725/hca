@@ -1,0 +1,1220 @@
+{
+  "observation": {
+    "text": "Where is Paris located?",
+    "metadata": {}
+  },
+  "final_answer": "step=9 density=0.95",
+  "final_rel_state": {
+    "entities": {
+      "observation": {
+        "id": "observation",
+        "type": "text",
+        "metadata": {
+          "text": "Where is Paris located?",
+          "length": 23
+        }
+      }
+    },
+    "relations": [
+      {
+        "source_id": "observation",
+        "relation_type": "describes",
+        "target_id": "observation_text",
+        "metadata": {
+          "token_estimate": 4,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_0",
+        "metadata": {
+          "text": "step=0 density=0.96",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_1",
+        "metadata": {
+          "text": "step=1 density=1.23",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_2",
+        "metadata": {
+          "text": "step=2 density=1.30",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_3",
+        "metadata": {
+          "text": "step=3 density=1.29",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_4",
+        "metadata": {
+          "text": "step=4 density=1.25",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_5",
+        "metadata": {
+          "text": "step=5 density=1.20",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_6",
+        "metadata": {
+          "text": "step=6 density=1.14",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_7",
+        "metadata": {
+          "text": "step=7 density=1.08",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_8",
+        "metadata": {
+          "text": "step=8 density=1.01",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_9",
+        "metadata": {
+          "text": "step=9 density=0.95",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "name": "quantity_nonnegative",
+        "params": {}
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 1.6247080564498901
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Where is Paris located?",
+              "length": 23
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.96",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.7371803522109985,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+        "core": "reasoning_core_stub",
+        "density": 0.9601946473121643
+      }
+    },
+    {
+      "step_idx": 1,
+      "core_state_summary": {
+        "step": 2,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 2.2644782066345215
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Where is Paris located?",
+              "length": 23
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.96",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=1.23",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.7987843751907349,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+        "core": "reasoning_core_stub",
+        "density": 1.2322251796722412
+      }
+    },
+    {
+      "step_idx": 2,
+      "core_state_summary": {
+        "step": 3,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 2.5929386615753174
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Where is Paris located?",
+              "length": 23
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.96",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=1.23",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=1.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.8167127966880798,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+        "core": "reasoning_core_stub",
+        "density": 1.2986825704574585
+      }
+    },
+    {
+      "step_idx": 3,
+      "core_state_summary": {
+        "step": 4,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 2.832322597503662
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Where is Paris located?",
+              "length": 23
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.96",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=1.23",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=1.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=1.29",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.8196632266044617,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+        "core": "reasoning_core_stub",
+        "density": 1.2894847393035889
+      }
+    },
+    {
+      "step_idx": 4,
+      "core_state_summary": {
+        "step": 5,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 3.0522217750549316
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Where is Paris located?",
+              "length": 23
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.96",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=1.23",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=1.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=1.29",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=1.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.815912127494812,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+        "core": "reasoning_core_stub",
+        "density": 1.250419020652771
+      }
+    },
+    {
+      "step_idx": 5,
+      "core_state_summary": {
+        "step": 6,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 3.2715835571289062
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Where is Paris located?",
+              "length": 23
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.96",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=1.23",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=1.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=1.29",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=1.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=1.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.8083345890045166,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+        "core": "reasoning_core_stub",
+        "density": 1.1981099843978882
+      }
+    },
+    {
+      "step_idx": 6,
+      "core_state_summary": {
+        "step": 7,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 3.4929935932159424
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Where is Paris located?",
+              "length": 23
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.96",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=1.23",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=1.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=1.29",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=1.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=1.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 density=1.14",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.7981318831443787,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+        "core": "reasoning_core_stub",
+        "density": 1.1391792297363281
+      }
+    },
+    {
+      "step_idx": 7,
+      "core_state_summary": {
+        "step": 8,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 3.7141928672790527
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Where is Paris located?",
+              "length": 23
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.96",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=1.23",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=1.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=1.29",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=1.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=1.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 density=1.14",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_7",
+            "metadata": {
+              "text": "step=7 density=1.08",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.785933256149292,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+        "core": "reasoning_core_stub",
+        "density": 1.0768282413482666
+      }
+    },
+    {
+      "step_idx": 8,
+      "core_state_summary": {
+        "step": 9,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 3.9319779872894287
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Where is Paris located?",
+              "length": 23
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.96",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=1.23",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=1.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=1.29",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=1.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=1.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 density=1.14",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_7",
+            "metadata": {
+              "text": "step=7 density=1.08",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_8",
+            "metadata": {
+              "text": "step=8 density=1.01",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.7721696496009827,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+        "core": "reasoning_core_stub",
+        "density": 1.0130521059036255
+      }
+    },
+    {
+      "step_idx": 9,
+      "core_state_summary": {
+        "step": 10,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 4.143454074859619
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Where is Paris located?",
+              "length": 23
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.96",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=1.23",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=1.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=1.29",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=1.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=1.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 density=1.14",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_7",
+            "metadata": {
+              "text": "step=7 density=1.08",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_8",
+            "metadata": {
+              "text": "step=8 density=1.01",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_9",
+            "metadata": {
+              "text": "step=9 density=0.95",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.7572124600410461,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+        "core": "reasoning_core_stub",
+        "density": 0.949337899684906
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_stub",
+    "semantic_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+    "model": "phi3:latest"
+  }
+}

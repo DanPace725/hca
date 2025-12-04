@@ -1,0 +1,1602 @@
+[
+  {
+    "prompt": "Summarize the following information: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0001"
+  },
+  {
+    "prompt": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0002"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": true,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0003"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0004"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Return the answer in valid JSON format only.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0005"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the key information and present it as a list: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "list",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0006"
+  },
+  {
+    "prompt": "Summarize the following information: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0007"
+  },
+  {
+    "prompt": "Summarize the following information: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0008"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Extract the key information and present it as a list: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": true,
+      "task_frame": "list",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0009"
+  },
+  {
+    "prompt": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Return the answer in valid JSON format only.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0010"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0011"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Summarize the following information: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0012"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0013"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0014"
+  },
+  {
+    "prompt": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0015"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0016"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. You excel at logical reasoning and mathematical precision. Extract the key information and present it as a list: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": true,
+      "task_frame": "list",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0017"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Return the answer in valid JSON format only.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0018"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Extract the information and return it in JSON format: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. How many does each person have at the end? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": true,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0019"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. You excel at logical reasoning and mathematical precision. Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "apple_sharing",
+    "expected_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+    "task_type": "math_reasoning",
+    "features": {
+      "role_context": true,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0020"
+  },
+  {
+    "prompt": "Summarize the following information: John has 5 cookies and gives 2 to Mary. How many does he have left? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0021"
+  },
+  {
+    "prompt": "Solve the following problem: John has 5 cookies and gives 2 to Mary. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0022"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Solve the following problem: John has 5 cookies and gives 2 to Mary. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": true,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0023"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: John has 5 cookies and gives 2 to Mary. How many does he have left? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0024"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: John has 5 cookies and gives 2 to Mary. Return the answer in valid JSON format only.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0025"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the key information and present it as a list: John has 5 cookies and gives 2 to Mary. How many does he have left? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "list",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0026"
+  },
+  {
+    "prompt": "Summarize the following information: John has 5 cookies and gives 2 to Mary. Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0027"
+  },
+  {
+    "prompt": "Summarize the following information: John has 5 cookies and gives 2 to Mary. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0028"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Extract the key information and present it as a list: John has 5 cookies and gives 2 to Mary. Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": true,
+      "task_frame": "list",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0029"
+  },
+  {
+    "prompt": "Solve the following problem: John has 5 cookies and gives 2 to Mary. Return the answer in valid JSON format only.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0030"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Solve the following problem: John has 5 cookies and gives 2 to Mary. How many does he have left? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0031"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Summarize the following information: John has 5 cookies and gives 2 to Mary. How many does he have left? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0032"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: John has 5 cookies and gives 2 to Mary. How many does he have left? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0033"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: John has 5 cookies and gives 2 to Mary. How many does he have left? Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0034"
+  },
+  {
+    "prompt": "Solve the following problem: John has 5 cookies and gives 2 to Mary. How many does he have left? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0035"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: John has 5 cookies and gives 2 to Mary. How many does he have left? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0036"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. You excel at logical reasoning and mathematical precision. Extract the key information and present it as a list: John has 5 cookies and gives 2 to Mary. Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": true,
+      "task_frame": "list",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0037"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: John has 5 cookies and gives 2 to Mary. Return the answer in valid JSON format only.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0038"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Extract the information and return it in JSON format: John has 5 cookies and gives 2 to Mary. How many does he have left? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": true,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0039"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. You excel at logical reasoning and mathematical precision. Solve the following problem: John has 5 cookies and gives 2 to Mary. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "cookie_problem",
+    "expected_answer": "John has 3 cookies left.",
+    "task_type": "simple_math",
+    "features": {
+      "role_context": true,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0040"
+  },
+  {
+    "prompt": "Summarize the following information: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. What time does Sarah leave? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0041"
+  },
+  {
+    "prompt": "Solve the following problem: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0042"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Solve the following problem: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": true,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0043"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. What time does Sarah leave? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0044"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. Return the answer in valid JSON format only.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0045"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the key information and present it as a list: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. What time does Sarah leave? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "list",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0046"
+  },
+  {
+    "prompt": "Summarize the following information: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0047"
+  },
+  {
+    "prompt": "Summarize the following information: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0048"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Extract the key information and present it as a list: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": true,
+      "task_frame": "list",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0049"
+  },
+  {
+    "prompt": "Solve the following problem: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. Return the answer in valid JSON format only.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0050"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Solve the following problem: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. What time does Sarah leave? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0051"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Summarize the following information: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. What time does Sarah leave? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0052"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. What time does Sarah leave? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0053"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. What time does Sarah leave? Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0054"
+  },
+  {
+    "prompt": "Solve the following problem: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. What time does Sarah leave? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0055"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. What time does Sarah leave? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0056"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. You excel at logical reasoning and mathematical precision. Extract the key information and present it as a list: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": true,
+      "task_frame": "list",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0057"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. Return the answer in valid JSON format only.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0058"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Extract the information and return it in JSON format: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. What time does Sarah leave? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": true,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0059"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. You excel at logical reasoning and mathematical precision. Solve the following problem: The team meeting is at 2 PM. It lasts 90 minutes. Sarah needs to leave 30 minutes early. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "meeting_schedule",
+    "expected_answer": "Sarah leaves at 3 PM.",
+    "task_type": "time_calculation",
+    "features": {
+      "role_context": true,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0060"
+  },
+  {
+    "prompt": "Summarize the following information: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. How much flour and how many eggs? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0061"
+  },
+  {
+    "prompt": "Solve the following problem: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0062"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Solve the following problem: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": true,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0063"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. How much flour and how many eggs? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0064"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. Return the answer in valid JSON format only.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0065"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the key information and present it as a list: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. How much flour and how many eggs? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "list",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0066"
+  },
+  {
+    "prompt": "Summarize the following information: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0067"
+  },
+  {
+    "prompt": "Summarize the following information: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0068"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Extract the key information and present it as a list: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": true,
+      "task_frame": "list",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0069"
+  },
+  {
+    "prompt": "Solve the following problem: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. Return the answer in valid JSON format only.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0070"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Solve the following problem: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. How much flour and how many eggs? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0071"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Summarize the following information: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. How much flour and how many eggs? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0072"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. How much flour and how many eggs? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0073"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. How much flour and how many eggs? Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0074"
+  },
+  {
+    "prompt": "Solve the following problem: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. How much flour and how many eggs? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0075"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. How much flour and how many eggs? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0076"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. You excel at logical reasoning and mathematical precision. Extract the key information and present it as a list: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": true,
+      "task_frame": "list",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0077"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. Return the answer in valid JSON format only.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0078"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Extract the information and return it in JSON format: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. How much flour and how many eggs? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": true,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0079"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. You excel at logical reasoning and mathematical precision. Solve the following problem: A recipe for 4 people uses 2 cups of flour and 3 eggs. You need to make it for 6 people. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "recipe_scaling",
+    "expected_answer": "3 cups of flour and 4.5 eggs (or round to 5).",
+    "task_type": "scaling",
+    "features": {
+      "role_context": true,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0080"
+  },
+  {
+    "prompt": "Summarize the following information: A car travels 60 miles in the first hour and 45 miles in the second hour. What is the total distance and average speed? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0081"
+  },
+  {
+    "prompt": "Solve the following problem: A car travels 60 miles in the first hour and 45 miles in the second hour. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0082"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Solve the following problem: A car travels 60 miles in the first hour and 45 miles in the second hour. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": true,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0083"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: A car travels 60 miles in the first hour and 45 miles in the second hour. What is the total distance and average speed? Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0084"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: A car travels 60 miles in the first hour and 45 miles in the second hour. Return the answer in valid JSON format only.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0085"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the key information and present it as a list: A car travels 60 miles in the first hour and 45 miles in the second hour. What is the total distance and average speed? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "list",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0086"
+  },
+  {
+    "prompt": "Summarize the following information: A car travels 60 miles in the first hour and 45 miles in the second hour. Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0087"
+  },
+  {
+    "prompt": "Summarize the following information: A car travels 60 miles in the first hour and 45 miles in the second hour. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0088"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Extract the key information and present it as a list: A car travels 60 miles in the first hour and 45 miles in the second hour. Return the answer in valid JSON format only. Use only the information provided. Do not add examples or assumptions.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": true,
+      "task_frame": "list",
+      "output_shape": "json",
+      "content_scope_explicit": true,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0089"
+  },
+  {
+    "prompt": "Solve the following problem: A car travels 60 miles in the first hour and 45 miles in the second hour. Return the answer in valid JSON format only.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0090"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Solve the following problem: A car travels 60 miles in the first hour and 45 miles in the second hour. What is the total distance and average speed? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0091"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Summarize the following information: A car travels 60 miles in the first hour and 45 miles in the second hour. What is the total distance and average speed? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "summarize",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0092"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: A car travels 60 miles in the first hour and 45 miles in the second hour. What is the total distance and average speed? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0093"
+  },
+  {
+    "prompt": "You excel at logical reasoning and mathematical precision. Extract the information and return it in JSON format: A car travels 60 miles in the first hour and 45 miles in the second hour. What is the total distance and average speed? Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0094"
+  },
+  {
+    "prompt": "Solve the following problem: A car travels 60 miles in the first hour and 45 miles in the second hour. What is the total distance and average speed? Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0095"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: A car travels 60 miles in the first hour and 45 miles in the second hour. What is the total distance and average speed? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0096"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. You excel at logical reasoning and mathematical precision. Extract the key information and present it as a list: A car travels 60 miles in the first hour and 45 miles in the second hour. Return the answer in valid JSON format only. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": true,
+      "task_frame": "list",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0097"
+  },
+  {
+    "prompt": "Extract the information and return it in JSON format: A car travels 60 miles in the first hour and 45 miles in the second hour. Return the answer in valid JSON format only.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": false,
+      "task_frame": "json",
+      "output_shape": "json",
+      "content_scope_explicit": false,
+      "closure_explicit": false,
+      "logic_boost": false,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0098"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. Extract the information and return it in JSON format: A car travels 60 miles in the first hour and 45 miles in the second hour. What is the total distance and average speed? Provide your answer in a clear sentence. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": true,
+      "task_frame": "json",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": false,
+      "closure_explicit": true,
+      "logic_boost": false,
+      "question_in_prompt": true
+    },
+    "test_id": "test_0099"
+  },
+  {
+    "prompt": "You are a helpful AI assistant that provides clear and accurate answers. You excel at logical reasoning and mathematical precision. Solve the following problem: A car travels 60 miles in the first hour and 45 miles in the second hour. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "scenario": "travel_distance",
+    "expected_answer": "105 miles total, 52.5 mph average.",
+    "task_type": "averaging",
+    "features": {
+      "role_context": true,
+      "task_frame": "solve",
+      "output_shape": "plain_prose",
+      "content_scope_explicit": true,
+      "closure_explicit": true,
+      "logic_boost": true,
+      "question_in_prompt": false
+    },
+    "test_id": "test_0100"
+  }
+]

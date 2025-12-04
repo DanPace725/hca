@@ -1,0 +1,193 @@
+{
+  "observation": {
+    "text": "Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John.",
+    "metadata": {}
+  },
+  "final_answer": "step=0 gru_score=2.40",
+  "final_rel_state": {
+    "entities": {
+      "tom": {
+        "id": "tom",
+        "type": "person",
+        "metadata": {}
+      },
+      "ent_1": {
+        "id": "ent_1",
+        "type": "person",
+        "metadata": {}
+      },
+      "john": {
+        "id": "john",
+        "type": "person",
+        "metadata": {}
+      }
+    },
+    "relations": [
+      {
+        "source_id": "tom",
+        "relation_type": "gives",
+        "target_id": "sarah",
+        "metadata": {
+          "item": "apple",
+          "quantity": 1,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "tom",
+        "relation_type": "buys",
+        "target_id": "observation_text",
+        "metadata": {
+          "item": "apples",
+          "quantity": 4,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "john",
+        "relation_type": "receives from",
+        "target_id": "tom",
+        "metadata": {
+          "item": "apple",
+          "quantity": 1
+        }
+      },
+      {
+        "source_id": "john",
+        "relation_type": "splits equally with",
+        "target_id": "observation_text",
+        "metadata": {
+          "total quantity of apples after giving to Sarah": 2,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_0",
+        "metadata": {
+          "text": "step=0 gru_score=2.40",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "name": "quantity_nonnegative",
+        "params": {}
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": 4.254491329193115
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_1": {
+            "id": "ent_1",
+            "type": "person",
+            "metadata": {}
+          },
+          "john": {
+            "id": "john",
+            "type": "person",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "observation_text",
+            "metadata": {
+              "item": "apples",
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "receives from",
+            "target_id": "tom",
+            "metadata": {
+              "item": "apple",
+              "quantity": 1
+            }
+          },
+          {
+            "source_id": "john",
+            "relation_type": "splits equally with",
+            "target_id": "observation_text",
+            "metadata": {
+              "total quantity of apples after giving to Sarah": 2,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 gru_score=2.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 0.9163255095481873,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_gru",
+        "gru_score": 2.4012529850006104
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_ollama",
+    "semantic_error": null,
+    "model": "phi3:latest"
+  }
+}

@@ -1,0 +1,844 @@
+{
+  "observation": {
+    "text": "Check semantic trace",
+    "metadata": null
+  },
+  "final_answer": "step=7 density=0.50",
+  "final_rel_state": {
+    "entities": {
+      "observation": {
+        "id": "observation",
+        "type": "text",
+        "metadata": {
+          "text": "Check semantic trace",
+          "length": 20
+        }
+      }
+    },
+    "relations": [
+      {
+        "source_id": "observation",
+        "relation_type": "describes",
+        "target_id": "observation_text",
+        "metadata": {
+          "token_estimate": 3,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_0",
+        "metadata": {
+          "text": "step=0 density=0.15",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_1",
+        "metadata": {
+          "text": "step=1 density=0.20",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_2",
+        "metadata": {
+          "text": "step=2 density=0.25",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_3",
+        "metadata": {
+          "text": "step=3 density=0.30",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_4",
+        "metadata": {
+          "text": "step=4 density=0.35",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_5",
+        "metadata": {
+          "text": "step=5 density=0.40",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_6",
+        "metadata": {
+          "text": "step=6 density=0.45",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "hypothesis",
+        "target_id": "step_7",
+        "metadata": {
+          "text": "step=7 density=0.50",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": []
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.15000000000000002
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Check semantic trace",
+              "length": 20
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 3,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.15",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.05000000000000001,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [Errno 1] Operation not permitted>",
+        "core": "reasoning_core_stub",
+        "density": 0.15000000000000002
+      }
+    },
+    {
+      "step_idx": 1,
+      "core_state_summary": {
+        "step": 2,
+        "hidden_accumulator": 0.35000000000000003
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Check semantic trace",
+              "length": 20
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 3,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.15",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.11666666666666668,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [Errno 1] Operation not permitted>",
+        "core": "reasoning_core_stub",
+        "density": 0.2
+      }
+    },
+    {
+      "step_idx": 2,
+      "core_state_summary": {
+        "step": 3,
+        "hidden_accumulator": 0.6000000000000001
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Check semantic trace",
+              "length": 20
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 3,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.15",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.20000000000000004,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [Errno 1] Operation not permitted>",
+        "core": "reasoning_core_stub",
+        "density": 0.25
+      }
+    },
+    {
+      "step_idx": 3,
+      "core_state_summary": {
+        "step": 4,
+        "hidden_accumulator": 0.9000000000000001
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Check semantic trace",
+              "length": 20
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 3,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.15",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.30000000000000004,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [Errno 1] Operation not permitted>",
+        "core": "reasoning_core_stub",
+        "density": 0.30000000000000004
+      }
+    },
+    {
+      "step_idx": 4,
+      "core_state_summary": {
+        "step": 5,
+        "hidden_accumulator": 1.25
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Check semantic trace",
+              "length": 20
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 3,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.15",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.4166666666666667,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [Errno 1] Operation not permitted>",
+        "core": "reasoning_core_stub",
+        "density": 0.35
+      }
+    },
+    {
+      "step_idx": 5,
+      "core_state_summary": {
+        "step": 6,
+        "hidden_accumulator": 1.65
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Check semantic trace",
+              "length": 20
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 3,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.15",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.5499999999999999,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [Errno 1] Operation not permitted>",
+        "core": "reasoning_core_stub",
+        "density": 0.4
+      }
+    },
+    {
+      "step_idx": 6,
+      "core_state_summary": {
+        "step": 7,
+        "hidden_accumulator": 2.1
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Check semantic trace",
+              "length": 20
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 3,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.15",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 density=0.45",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.7000000000000001,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [Errno 1] Operation not permitted>",
+        "core": "reasoning_core_stub",
+        "density": 0.45000000000000007
+      }
+    },
+    {
+      "step_idx": 7,
+      "core_state_summary": {
+        "step": 8,
+        "hidden_accumulator": 2.6
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "Check semantic trace",
+              "length": 20
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 3,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_0",
+            "metadata": {
+              "text": "step=0 density=0.15",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_1",
+            "metadata": {
+              "text": "step=1 density=0.20",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_2",
+            "metadata": {
+              "text": "step=2 density=0.25",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_3",
+            "metadata": {
+              "text": "step=3 density=0.30",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_4",
+            "metadata": {
+              "text": "step=4 density=0.35",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_5",
+            "metadata": {
+              "text": "step=5 density=0.40",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_6",
+            "metadata": {
+              "text": "step=6 density=0.45",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "hypothesis",
+            "target_id": "step_7",
+            "metadata": {
+              "text": "step=7 density=0.50",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": []
+      },
+      "halt_probability": 0.8666666666666667,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [Errno 1] Operation not permitted>",
+        "core": "reasoning_core_stub",
+        "density": 0.5
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_stub",
+    "semantic_error": "<urlopen error [Errno 1] Operation not permitted>",
+    "model": "phi3:latest"
+  }
+}

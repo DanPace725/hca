@@ -1,0 +1,8 @@
+# Minimal dependencies for running hybrid reasoner (rules + stub mode only)
+# No external packages required! Uses only Python 3.10+ standard library.
+# 
+# This file exists for documentation purposes.
+# The system works out-of-the-box with just Python.
+#
+# To enable GRU neural network features, install from requirements.txt instead.
+

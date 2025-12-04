@@ -1,0 +1,88 @@
+{
+  "summary": {
+    "task_count": 5,
+    "accuracy": 0.0,
+    "max_steps": 10,
+    "halt_threshold": 0.85,
+    "timestamp": "2025-12-04T05:17:58.151058+00:00",
+    "semantic_counts": {
+      "semantic_stub": 5
+    },
+    "answer_source_counts": {
+      "STUB": 5
+    },
+    "scenarios_filtered": null
+  },
+  "results": [
+    {
+      "test_id": "test_0001",
+      "scenario": "apple_sharing",
+      "output_shape": "json",
+      "expected": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "predicted": "step=7 density=0.55",
+      "answer_source": "STUB",
+      "match": false,
+      "reason": "format_error",
+      "format_ok": false,
+      "steps": 8,
+      "semantic_source": "semantic_stub",
+      "semantic_error": "<urlopen error [Errno 1] Operation not permitted>"
+    },
+    {
+      "test_id": "test_0002",
+      "scenario": "apple_sharing",
+      "output_shape": "plain_prose",
+      "expected": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "predicted": "step=7 density=0.55",
+      "answer_source": "STUB",
+      "match": false,
+      "reason": "no_match",
+      "format_ok": true,
+      "steps": 8,
+      "semantic_source": "semantic_stub",
+      "semantic_error": "<urlopen error [Errno 1] Operation not permitted>"
+    },
+    {
+      "test_id": "test_0003",
+      "scenario": "apple_sharing",
+      "output_shape": "plain_prose",
+      "expected": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "predicted": "step=7 density=0.55",
+      "answer_source": "STUB",
+      "match": false,
+      "reason": "no_match",
+      "format_ok": true,
+      "steps": 8,
+      "semantic_source": "semantic_stub",
+      "semantic_error": "<urlopen error [Errno 1] Operation not permitted>"
+    },
+    {
+      "test_id": "test_0004",
+      "scenario": "apple_sharing",
+      "output_shape": "json",
+      "expected": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "predicted": "step=7 density=0.55",
+      "answer_source": "STUB",
+      "match": false,
+      "reason": "format_error",
+      "format_ok": false,
+      "steps": 8,
+      "semantic_source": "semantic_stub",
+      "semantic_error": "<urlopen error [Errno 1] Operation not permitted>"
+    },
+    {
+      "test_id": "test_0005",
+      "scenario": "apple_sharing",
+      "output_shape": "json",
+      "expected": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "predicted": "step=7 density=0.55",
+      "answer_source": "STUB",
+      "match": false,
+      "reason": "format_error",
+      "format_ok": false,
+      "steps": 8,
+      "semantic_source": "semantic_stub",
+      "semantic_error": "<urlopen error [Errno 1] Operation not permitted>"
+    }
+  ]
+}

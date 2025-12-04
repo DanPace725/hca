@@ -1,0 +1,116 @@
+{
+  "observation": {
+    "text": "John has 5 cookies and gives 2 to Mary.",
+    "metadata": {
+      "scenario": "cookie_problem"
+    }
+  },
+  "final_answer": "John has 3 cookies left.",
+  "final_rel_state": {
+    "entities": {
+      "observation": {
+        "id": "observation",
+        "type": "text",
+        "metadata": {
+          "text": "John has 5 cookies and gives 2 to Mary.",
+          "length": 39
+        }
+      }
+    },
+    "relations": [
+      {
+        "source_id": "observation",
+        "relation_type": "describes",
+        "target_id": "observation_text",
+        "metadata": {
+          "token_estimate": 9,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "answer",
+        "target_id": "answer",
+        "metadata": {
+          "text": "John has 3 cookies left.",
+          "source": "reasoning_core_rule",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "name": "quantity_nonnegative",
+        "params": {}
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.0,
+        "hidden_norm": null
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "observation": {
+            "id": "observation",
+            "type": "text",
+            "metadata": {
+              "text": "John has 5 cookies and gives 2 to Mary.",
+              "length": 39
+            }
+          }
+        },
+        "relations": [
+          {
+            "source_id": "observation",
+            "relation_type": "describes",
+            "target_id": "observation_text",
+            "metadata": {
+              "token_estimate": 9,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "answer",
+            "target_id": "answer",
+            "metadata": {
+              "text": "John has 3 cookies left.",
+              "source": "reasoning_core_rule",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 1.0,
+      "notes": {
+        "semantic_source": "semantic_stub",
+        "semantic_error": "<urlopen error [Errno 1] Operation not permitted>",
+        "core": "reasoning_core_rule"
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_stub",
+    "semantic_error": "<urlopen error [Errno 1] Operation not permitted>",
+    "model": "phi3:latest"
+  }
+}

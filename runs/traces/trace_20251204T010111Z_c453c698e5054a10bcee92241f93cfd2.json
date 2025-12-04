@@ -1,0 +1,147 @@
+{
+  "observation": {
+    "text": "Solve the following problem: Tom has 3 apples. He gives Sarah 1, buys 4, then splits them equally with John. Provide your answer in a clear sentence. Use only the information provided. Do not add examples or assumptions. End with the final answer only. Provide no additional commentary.",
+    "metadata": {
+      "scenario": "apple_sharing",
+      "test_id": "test_0002",
+      "output_shape": "plain_prose"
+    }
+  },
+  "final_answer": "Tom and John each have 3 apples; Sarah has 1 apple.",
+  "final_rel_state": {
+    "entities": {
+      "tom": {
+        "id": "tom",
+        "type": "person",
+        "metadata": {}
+      },
+      "sarah": {
+        "id": "sarah",
+        "type": "person",
+        "metadata": {}
+      },
+      "ent_2": {
+        "id": "ent_2",
+        "type": "unknown",
+        "metadata": {}
+      }
+    },
+    "relations": [
+      {
+        "source_id": "tom",
+        "relation_type": "gives",
+        "target_id": "sarah",
+        "metadata": {
+          "quantity": 1
+        }
+      },
+      {
+        "source_id": "tom",
+        "relation_type": "buys",
+        "target_id": "apple",
+        "metadata": {
+          "quantity": 4,
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      },
+      {
+        "source_id": "observation",
+        "relation_type": "answer",
+        "target_id": "answer",
+        "metadata": {
+          "text": "Tom and John each have 3 apples; Sarah has 1 apple.",
+          "source": "reasoning_core_rule",
+          "warnings": [
+            "dangling_relation"
+          ]
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "name": "quantity_nonnegative",
+        "params": {}
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "core_state_summary": {
+        "step": 1,
+        "hidden_accumulator": 0.0
+      },
+      "relational_state_snapshot": {
+        "entities": {
+          "tom": {
+            "id": "tom",
+            "type": "person",
+            "metadata": {}
+          },
+          "sarah": {
+            "id": "sarah",
+            "type": "person",
+            "metadata": {}
+          },
+          "ent_2": {
+            "id": "ent_2",
+            "type": "unknown",
+            "metadata": {}
+          }
+        },
+        "relations": [
+          {
+            "source_id": "tom",
+            "relation_type": "gives",
+            "target_id": "sarah",
+            "metadata": {
+              "quantity": 1
+            }
+          },
+          {
+            "source_id": "tom",
+            "relation_type": "buys",
+            "target_id": "apple",
+            "metadata": {
+              "quantity": 4,
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          },
+          {
+            "source_id": "observation",
+            "relation_type": "answer",
+            "target_id": "answer",
+            "metadata": {
+              "text": "Tom and John each have 3 apples; Sarah has 1 apple.",
+              "source": "reasoning_core_rule",
+              "warnings": [
+                "dangling_relation"
+              ]
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "name": "quantity_nonnegative",
+            "params": {}
+          }
+        ]
+      },
+      "halt_probability": 1.0,
+      "notes": {
+        "semantic_source": "semantic_ollama",
+        "semantic_error": null,
+        "core": "reasoning_core_rule"
+      }
+    }
+  ],
+  "semantic_info": {
+    "semantic_source": "semantic_ollama",
+    "semantic_error": null,
+    "model": "phi3:latest"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "summary": {
+    "task_count": 3,
+    "accuracy": 1.0,
+    "max_steps": 10,
+    "halt_threshold": 0.85,
+    "timestamp": "2025-12-04T01:01:16.759587+00:00",
+    "semantic_counts": {
+      "semantic_stub": 1,
+      "semantic_ollama": 2
+    },
+    "scenarios_filtered": null
+  },
+  "results": [
+    {
+      "test_id": "test_0001",
+      "scenario": "apple_sharing",
+      "output_shape": "json",
+      "expected": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "predicted": "{\"tom\": 3.0, \"john\": 3.0, \"sarah\": 1}",
+      "match": true,
+      "reason": "numbers_subset",
+      "format_ok": true,
+      "steps": 1,
+      "semantic_source": "semantic_stub",
+      "semantic_error": null
+    },
+    {
+      "test_id": "test_0002",
+      "scenario": "apple_sharing",
+      "output_shape": "plain_prose",
+      "expected": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "predicted": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "match": true,
+      "reason": "exact",
+      "format_ok": true,
+      "steps": 1,
+      "semantic_source": "semantic_ollama",
+      "semantic_error": null
+    },
+    {
+      "test_id": "test_0003",
+      "scenario": "apple_sharing",
+      "output_shape": "plain_prose",
+      "expected": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "predicted": "Tom and John each have 3 apples; Sarah has 1 apple.",
+      "match": true,
+      "reason": "exact",
+      "format_ok": true,
+      "steps": 1,
+      "semantic_source": "semantic_ollama",
+      "semantic_error": null
+    }
+  ]
+}
